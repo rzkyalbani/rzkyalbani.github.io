@@ -1,0 +1,16 @@
+* {
+  /* border: 1px solid red; */
+}
+
+body {
+  color: #FEFBF6;
+  font-family: "Arimo", sans-serif;
+}
+
+.typed-cursor {
+  display: none;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+}
