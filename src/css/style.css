@@ -2,6 +2,11 @@
   /* border: 1px solid red; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   color: #FEFBF6;
   font-family: "Arimo", sans-serif;

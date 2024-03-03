@@ -1,11 +1,21 @@
 $(document).ready(function () {
   const typed1 = new Typed('#typed1', {
     strings: ['Hello, I\'m Rizky Albani'],
-    typeSpeed: 60,
+    typeSpeed: 0,
     onComplete: function () {
       const typed2 = new Typed('#typed2', {
-        strings: ['a web developer.'],
-        typeSpeed: 60,
+        strings: ['a newbie web developer, i\'m bad at design but i love coding.'],
+        typeSpeed: 0,
+        onComplete: function () {
+          $("#about-btn").removeClass("md:hidden");
+          $("#about-btn").addClass("md:flex");
+
+          $("#projects").removeClass("md:hidden");
+          $("#projects").addClass("md:flex");
+
+          $("#skills").removeClass("md:hidden");
+          $("#skills").addClass("md:block");
+        }
       })
     }
   });
@@ -27,6 +37,9 @@ $(document).ready(function () {
   $("#navbar-list a").click(function () {
     $("#navbar-list a").removeClass("bg-[#ECB159] rounded-md");
     $(this).addClass("bg-[#ECB159] rounded-md");
+    $("#hamburger").toggleClass("hidden");
+    $("#close-hamburger").toggleClass("hidden");
+    $("#navbar-list").addClass("hidden");
   });
 
   $("#navbar a").click(function () {
