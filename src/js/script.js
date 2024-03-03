@@ -15,6 +15,12 @@ $(document).ready(function () {
 
           $("#skills").removeClass("md:hidden");
           $("#skills").addClass("md:block");
+
+          $("#contacts").removeClass("md:hidden");
+          $("#contacts").addClass("md:block");
+
+          $("#footer").removeClass("md:hidden");
+          $("#footer").addClass("md:flex");
         }
       })
     }
