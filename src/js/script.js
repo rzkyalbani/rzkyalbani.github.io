@@ -1,11 +1,11 @@
 $(document).ready(function () {
   const typed1 = new Typed('#typed1', {
     strings: ['Hello, I\'m Rizky Albani'],
-    typeSpeed: 0,
+    typeSpeed: 70,
     onComplete: function () {
       const typed2 = new Typed('#typed2', {
         strings: ['a newbie web developer, i\'m bad at design but i love coding.'],
-        typeSpeed: 0,
+        typeSpeed: 70,
         onComplete: function () {
           $("#about-btn").removeClass("md:hidden");
           $("#about-btn").addClass("md:flex");
